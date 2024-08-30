@@ -20,6 +20,11 @@ test_liger_kernels/
 conda env create environment.yml
 conda activate liger
 ```
+#### datasets and model:
+```
+datasets=('tau/commonsense_qa' 'tatsu-lab/alpaca')
+model='meta-llama/Meta-Llama-3-8B-Instruct'
+```
 #### Run with Liger Kernel:
 ```
 python run_finetune.py -c config.ini --exp_name "$exp_name" --model_name "$model" --dataset_name "$dataset" --learning_steps 1000 --logging_steps 1 --include_num_input_tokens_seen --use_liger --train_batch_size "$bs" --max_seq_length "$seqlen"
