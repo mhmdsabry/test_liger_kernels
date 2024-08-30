@@ -1,0 +1,23 @@
+# all packages used:
+name: liger
+channels:
+ - defaults
+ - conda-forge
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - pandas
+    - tqdm
+    - transformers
+    - huggingface-hub
+    - liger-kernel
+    - accelerate
+    - triton
+    - trl 
+    - peft
+    - sentencepiece
+    - wandb
+
+
+  - pytorch::pytorch=2.4.0
